@@ -1,0 +1,95 @@
+* {
+    font-family: 'Roboto';
+}
+
+header{
+    background-color: #EAC926;
+}
+
+body{
+    font-size: 12px;
+    margin: 0px;
+}
+
+header ul{
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 0px 20px;
+}
+
+.buscador{
+    padding: 0 20px;
+}
+
+.slogan {
+    text-align: center;
+}
+
+.ultima-vista .titular , .ofertas .titular{
+    font-size: 24px;
+}
+
+.ultima-vista .precio, .ofertas .precio{
+    font-size: 18px;
+}
+
+.ultima-vista .descuento, .ofertas .descuento, .ultima-vista .descripcion, .ofertas .descripcion{
+    font-size: 12px;
+}
+
+.burger-menu{
+    text-align: center;
+    background-color: transparent;
+    margin: auto;
+}
+
+.burger-menu i{
+    font-size: 16px;
+    margin: 15px 0;
+    padding: 13px 13px;
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: white;
+}
+
+.informacion{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.info-icon{
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    margin: auto;
+}
+
+.info-icon i{
+    margin-bottom: 10px;
+    color: #1259c3;
+    font-size: 2em;
+}
+
+.informacion p, .derechos{
+    margin-top: 0;
+    color: grey;
+    font-size: 12px;
+}
+
+.informacion h4{
+    font-size: 14px;
+}
+
