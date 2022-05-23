@@ -53,23 +53,34 @@ main{
     padding: 0px 20px;
 }
 
-.register-form{
+.register-form, .login-form{
     padding: 20px 15px;
 }
 
-.register-form div{
+.register-form div, .login-form div{
     margin-bottom: 15px;
 }
 
-.register-form label{
+.register-form label, .login-form label{
     margin-bottom: 5px;
     font-style: italic;
     display: block;
 }
 
-.register-form .controller{
+.register-form .controller, .login-form .controller{
     width: 100%;
     padding: 8px;
+}
+
+.login-form button{
+    margin-top: 20px;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .register-form button{
