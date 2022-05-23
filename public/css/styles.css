@@ -1,5 +1,8 @@
 * {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Roboto';
+    box-sizing: border-box;
 }
 
 header{
@@ -9,10 +12,15 @@ header{
 body{
     font-size: 12px;
     margin: 0px;
+    background-color: #ebebeba9;
+}
+
+header nav{
+    display: none;
 }
 
 header ul{
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 0;
 }
 
@@ -25,9 +33,31 @@ header ul li a{
     text-decoration: none;
 }
 
+header img{
+    width: 100%;
+    max-width: 360px;   
+}
+
 footer{
     margin-top: 50px;
     padding: 0px 20px;
+}
+
+main img{
+    width: 80%;
+    margin: auto;
+    max-width: 420px;
+}
+
+main{
+    padding: 0px 20px;
+}
+
+.ultima-vista article, .ofertas article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
 }
 
 .buscador{
@@ -38,16 +68,38 @@ footer{
     text-align: center;
 }
 
+.main-article{
+    margin-bottom: 10px;
+    border-bottom: solid 1px grey;
+    padding: 0 15px;
+}
+
 .ultima-vista .titular , .ofertas .titular{
-    font-size: 24px;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 20px;
 }
 
 .ultima-vista .precio, .ofertas .precio{
     font-size: 18px;
+    margin: 8px 0;
+    display: inline;
 }
 
 .ultima-vista .descuento, .ofertas .descuento, .ultima-vista .descripcion, .ofertas .descripcion{
     font-size: 12px;
+    margin: 8px 0;
+}
+
+.ultima-vista .descripcion, .ofertas .descripcion{
+    display: none;
+    color: grey;
+
+}
+
+.ultima-vista .descuento, .ofertas .descuento{
+    color: #34b94e;
+    display: inline;
 }
 
 .burger-menu{
@@ -89,7 +141,94 @@ footer{
     font-size: 12px;
 }
 
+.ultima-vista article{
+    background-color: #1259c3;
+}
+
+.fas{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 50%;
+    float: right;
+    border: solid 1px #34b94e;
+}
+
 .informacion h4{
     font-size: 14px;
 }
 
+.ultima-vista article, .ofertas article{
+    background-color: white;
+}
+
+.ultima-vista article i, .ofertas article i{
+    color: #34b94e;
+}
+
+.image-header img{
+    width: 100%;
+
+}
+
+/* Mobile Medium */
+@media (min-width: 361px) {
+    .ultima-vista .descripcion, .ofertas .descripcion{
+        display: block;
+    }
+
+    .ultima-vista .titular, .ofertas .titular{
+        font-size: 24px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .ultima-vista, .ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .ultima-vista article, .ofertas article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 44%;
+        margin: 1%;
+    }
+
+
+    .main-article{
+        border-bottom: solid 0px white;
+    }
+
+
+}
+
+/* Tablet */
+@media (min-width: 769px) {
+
+    header nav{
+        display: block;
+    }
+
+    .ultima-vista article, .ofertas article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 24%;
+        margin: 0.5%;
+    }
+
+    .main-article{
+        border-bottom: solid 0px white;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .nav2{
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+}
