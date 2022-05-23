@@ -53,6 +53,41 @@ main{
     padding: 0px 20px;
 }
 
+.register-form{
+    padding: 20px 15px;
+}
+
+.register-form div{
+    margin-bottom: 15px;
+}
+
+.register-form label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.register-form .controller{
+    width: 100%;
+    padding: 8px;
+}
+
+.register-form button{
+    margin: auto;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.register-form-buttons{
+    display: flex;
+}
+
+
 .ultima-vista article, .ofertas article {
     display: flex;
     flex-wrap: wrap;
