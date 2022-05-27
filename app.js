@@ -5,7 +5,7 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname, '/public')));
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Corriendo exitosamente en el puerto ${port}`);
 });
 
