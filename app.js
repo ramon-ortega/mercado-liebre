@@ -1,12 +1,12 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT;
 
 app.use(express.static(path.join(__dirname, '/public')));
 
-app.listen(process.env.PORT || port, () => {
-    console.log(`Corriendo exitosamente en el puerto ${port}`);
+app.listen(PORT, () => {
+    console.log(`Corriendo exitosamente en el puerto ${ PORT }`);
 });
 
 app.get('/', (req, res) => {
