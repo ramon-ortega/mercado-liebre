@@ -38,6 +38,16 @@ header img{
     max-width: 360px;   
 }
 
+header .buscador{
+    margin: auto;
+    padding-top: 10px;
+}
+
+.main-header-top-bar .slogan{
+    padding-top: 10px;
+    margin: auto;
+}
+
 footer{
     margin-top: 50px;
     padding: 0px 20px;
